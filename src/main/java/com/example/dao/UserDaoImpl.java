@@ -12,7 +12,7 @@ import com.mongodb.client.MongoDatabase;
 public class UserDaoImpl implements UserDao {
 
 	
-	MongoClient mongoClient = new MongoClient( "localhost" , 27017 );  
+	MongoClient mongoClient = new MongoClient( "mongo1-156824810.us-east-2.elb.amazonaws.com" , 27017 );  
 	MongoDatabase db = mongoClient.getDatabase("USER");  
 	MongoCollection<Document> collection = db.getCollection("DETAILS"); 
 	
